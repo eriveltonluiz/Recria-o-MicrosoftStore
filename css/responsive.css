@@ -1,0 +1,36 @@
+@media( max-width: 800px){
+
+    .jogo-principal{
+        height: 850px;
+    }
+
+    .jogo-principal .container{
+        height: 90%;
+        flex-direction: column;
+    }
+
+    .p-desc{
+        width: 90%;
+        padding-bottom: 10px;
+    }
+
+    .div-botao{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .descricao{
+        padding-top: 0;
+        margin-left: 15px;
+    }
+
+    .jogo-principal .container{
+        width: 75%;
+        margin: auto;
+    }
+
+    .img1{
+        width: 70%;
+        padding-left: 20%;
+    }
+}

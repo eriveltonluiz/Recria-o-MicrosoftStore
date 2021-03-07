@@ -1,0 +1,194 @@
+:root{
+    --vermelho: #E50914;
+    --branca: #fff;
+
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;   /* Garante que os elementos inseridos dentro de um elemento já especificado com tamnho 
+                                sejam espremidos não ultrapassando o tamanho do elemento*/ 
+}
+
+body{
+    background: var(--branca);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: #fff;
+    opacity: 100;
+    top:0;
+}
+
+header .container{
+    margin: 20px auto 10px;
+    display: flex;   /*Tem por padrão propriedade flex-direction: row, no qual os elementos estarão na mesma linha*/
+    align-items: center;
+    justify-content: space-between;    /* Cria um espaço entre o 1º filho que está a classe container e o 2º filho*/
+}
+
+.logo{
+    margin-left: 5px;
+    color: rgba(0, 0, 0, .50);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+}
+
+header nav a{
+    text-decoration: none;    /* Rempve o sublinhado*/
+    color: #AAA;
+    padding-right: 10px;
+}
+
+.estilo-link{
+    color: #000;
+    display: inline-block;
+}
+
+.estilo-link::after{
+    content: "";
+    display: block;
+    background-color: #0067b8;
+    height: 3px;
+    width: 100%;
+    margin-top: 3px;
+}
+
+header nav a:hover{
+    color: #000;
+}
+
+/* Filme principal*/
+.jogo-principal{
+    font-size: 16px;
+    background: url('../img/dragoncity.jpg') no-repeat;
+    height: 600px;
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.dist-top{
+    margin-top: 20px;
+}
+
+.link1{
+    text-decoration: none;
+    color: #0067b8;
+    font-weight: bold;
+}
+
+.link1:hover{
+    text-decoration: underline;
+}
+
+.links1 i{
+    margin-left:8px;
+    margin-right: 6px;
+    color: #000;
+    text-decoration: none;
+}
+
+.jogo-principal .links2 a{
+    text-decoration: none;
+    color: #000;
+}
+
+.jogo-principal .links2 a i{
+    margin-right: 5px;
+}
+
+.jogo-principal .links2 a i:last-child{
+    margin-left: 10px;
+}
+
+.jogo-principal .container{
+    position: absolute;
+    top:90px;
+    bottom:50px;
+    background-color: #fff;
+    height: 65%;
+    width: 82%;
+    display: flex;
+    justify-content: start;
+    margin: 0 auto;
+    border-radius: 2px;
+    box-shadow: 6px 6px 6px 3px rgba(211, 209, 209, 0.5);
+}
+
+.jogo-principal .container .img1{
+    margin: 25px;
+    margin-left: 25px;
+    height: 300px;
+}
+
+.jogo-principal .descricao{
+    margin-top: 45px;
+    width: 100%;
+}
+
+.sub-descricao p{
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+
+.sub-descricao p:last-child {
+    margin-bottom: 10px;
+}
+
+.sub-descricao img{
+    float: left;
+    max-height: 70px;
+    width: 70px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.botao{
+    background-color: #0067b8;;
+    color: #fff;
+    border: none;
+    padding: 15px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .4s ease all;
+    margin: 45px 60px auto auto;
+    
+}
+
+.botao:hover{
+    opacity: 0.7;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 50px;
+}
+
+.descricao-carrosel{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.descricao-carrosel a{
+    margin-left:20px;
+    margin-top: 6px;
+}
